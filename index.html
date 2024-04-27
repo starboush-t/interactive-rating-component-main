@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- Rating state start -->
+  
+        <section class="rating_state_section">
+          <div class="rating_star">
+            <img src="images/icon-star.svg" alt="Rating Image" />
+          </div>
+          <div class="rating_title">
+            <h2>How did we do?</h2>
+          </div>
+          <div class="rating_desc">
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div class="rating_values">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+          </div>
+          <div class="submit">
+            <button id="submitBtn">Submit</button>
+          </div>
+        </section>
+  
+        <!-- Rating state end -->
+  
+        <!-- Thank you state start -->
+        <section class="thank_msg_section hidden">
+          <div class="thank_msg_img">
+            <img
+              class="chip"
+              src="images/illustration-thank-you.svg"
+              alt="Thank Message Picture"
+            />
+          </div>
+          <div class="rating_selected">
+            <p>You selected <span id="rate">4</span> out of 5</p>
+          </div>
+          <div class="thank_msg_title">
+            <h2>Thank you!</h2>
+          </div>
+          <div class="thank_msg_text">
+            <p>
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </section>
+        <!-- Thank you state end -->
+      </div>
+    </main>
+  
+  </body>
+  <script src="main.js"></script>
+</html>
